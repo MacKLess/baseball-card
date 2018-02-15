@@ -9,10 +9,13 @@ class Employee < ApplicationRecord
   has_and_belongs_to_many :industries
   has_many :others
   # scope :critical_thinking, -> { where("skills = ? ", ("{Critical thinking}"))}
-  scope :intern, -> { where("project_roles = ? ", ('{Intern}'))}
+  scope :intern, -> { joins(:projects).where("role = ? ", ('{Intern}'))}
+
+
+
   scope :analyst, -> { where("project_roles = ? ", ("{Analyst}"))}
   scope :associate, -> { where("project_roles = ? ", ("{Associate}"))}
-  scope :engagement_manager, -> { where("project_roles = ? ", ("{Engagement Manager}"))}
+  scope :engagement_manager, -> { joins(:projects).where("role = ? ", ("{Engagement Manager}"))}
   scope :partner, -> { where("project_roles = ? ", ("{Partner}"))}
   scope :principal, -> { where("project_roles = ? ", ("{Principal}"))}
 

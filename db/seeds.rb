@@ -94,7 +94,7 @@ employees = [
    'Amsterdamn',
    '{E-Commerce, Non-Profit, Technology, Healthcare}',
    'No',
-   '{Engagment Manager, Analyst}',
+   '{Engagment Manager}',
    'No',
    ['Experimenter',
    'Interview designer',

@@ -12,7 +12,6 @@ class ProjectsController < ApplicationController
     @roles = Role.all
     @industries = Industry.all
     @companies = Company.all
-
   end
 
   def new
