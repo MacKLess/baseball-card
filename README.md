@@ -33,7 +33,7 @@ To install on your own machine, follow the instructions below:
 ## Live app
 
 To view a live version of the app - visit:
-http://baseball-card-env.ppxiu8phdg.us-west-2.elasticbeanstalk.com
+http://baseball-card-env.ppxiu8phdg.us-west-2.elasticbeanstalk.com/
 
 ## Specifications
 
